@@ -1,0 +1,7 @@
+[2026-04-09T22:49:14Z] === AST ITERATION 1 START | repo=dsherret/ts-morph sha=686189cd ===
+[2026-04-09T22:49:14Z] [iter=1] PHASE START: ast repo=dsherret/ts-morph sha=686189cd
+[2026-04-09T22:49:14Z] [iter=1] Building AST aggregate chunks
+[2026-04-09T22:54:00Z] [iter=1] AST chunks built count=1 triples=3201987
+[2026-04-09T22:54:00Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/686189cd860707bd96947156187310372eb7a85d/.complete
+[2026-04-09T22:54:00Z] [iter=1] PHASE END: ast elapsed_s=286 elapsed_min=4.8
+[2026-04-09T22:54:00Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
