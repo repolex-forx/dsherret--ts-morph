@@ -1,0 +1,83 @@
+[2026-04-10T06:20:33Z] === ENRICH ITERATION 1 START | repo=dsherret/ts-morph sha=873a2b35 ===
+[2026-04-10T06:20:33Z] [iter=1] PHASE START: enrich repo=dsherret/ts-morph sha=873a2b35 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/873a2b35-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/873a2b351f4cb5ab5cebc77ec1dd88192f54ca22.nq.gz
+[2026-04-10T06:20:55Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=81 MB
+[2026-04-10T06:21:24Z] [iter=1] AST store loaded triples=3200252 load_secs=27 mem_mb=930 MB
+[2026-04-10T06:21:24Z] [iter=1] Step 2: Finding LSP targets mem_mb=930 MB
+[2026-04-10T06:21:30Z] [iter=1] LSP targets found call_sites=33880 imports=3297 extends=868 implements=22 secs=6
+[2026-04-10T06:21:34Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=930 MB
+[2026-04-10T06:21:53Z] [iter=1] Position index built positions=208158 nodes_with_types=258544 secs=19 mem_mb=930 MB
+[2026-04-10T06:21:53Z] [iter=1] Step 3: Starting LSP resolution mem_mb=930 MB already_completed_types=[] already_completed_files=0
+[2026-04-10T06:21:53Z] [iter=1] Resolving target type target_type=call_site count=33880
+[2026-04-10T06:21:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=src/tests/compiler/ast/common/nodeTests.ts
+[2026-04-10T06:47:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=1 resolved=2 errors=1179 current=src/tests/compiler/ast/base/scopeableNodeTests.ts
+[2026-04-10T06:48:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.9 files_done=2 resolved=28 errors=1223 current=src/tests/compiler/ast/module/importSpecifierTests.ts
+[2026-04-10T06:50:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.1 files_done=3 resolved=70 errors=1323 current=src/tests/compiler/ast/statement/statementedNode/classTests.ts
+[2026-04-10T06:51:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=4 resolved=109 errors=1377 current=src/tests/compiler/ast/expression/metaPropertyTests.ts
+[2026-04-10T06:53:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.9 files_done=6 resolved=133 errors=1451 current=src/tests/compiler/ast/class/setAccessorDeclarationTests.ts
+[2026-04-10T06:54:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.9 files_done=7 resolved=133 errors=1501 current=src/tests/compiler/ast/statement/breakStatementTests.ts
+[2026-04-10T06:55:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=9 resolved=153 errors=1531 current=src/tests/compiler/ast/type/parenthesizedTypeNodeTests.ts
+[2026-04-10T06:57:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=11 resolved=197 errors=1623 current=src/utils/FileUtils.ts
+[2026-04-10T06:58:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=12 resolved=198 errors=1680 current=src/tests/compiler/ast/statement/forStatementTests.ts
+[2026-04-10T06:59:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.7 files_done=13 resolved=198 errors=1722 current=src/fileSystem/FileSystemWrapper.ts
+[2026-04-10T07:05:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.0 files_done=14 resolved=203 errors=2013 current=src/tests/fileSystem/virtualFileSystemHostTests.ts
+[2026-04-10T07:11:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.6 files_done=15 resolved=203 errors=2270 current=src/tests/compiler/ast/base/typedNodeTests.ts
+[2026-04-10T07:12:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.3 files_done=16 resolved=240 errors=2350 current=src/manipulation/nodeHandlers/ChangeChildOrderParentHandler.ts
+[2026-04-10T07:13:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=18 resolved=255 errors=2387 current=src/utils/references/LazyReferenceCoordinator.ts
+[2026-04-10T07:15:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=20 resolved=255 errors=2457 current=src/tests/compiler/ast/module/sourceFileTests.ts
+[2026-04-10T07:27:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.2 files_done=21 resolved=555 errors=3035 current=src/tests/projectTests.ts
+[2026-04-10T07:41:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=22 resolved=871 errors=3656 current=src/tests/compiler/ast/module/exportDeclarationTests.ts
+[2026-04-10T07:44:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.1 files_done=23 resolved=935 errors=3814 current=src/tests/compiler/ast/class/base/classLikeDeclarationBaseTests.ts
+[2026-04-10T07:59:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.2 files_done=24 resolved=935 errors=4511 current=src/manipulation/nodeHandlers/RangeParentHandler.ts
+[2026-04-10T08:00:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.8 files_done=25 resolved=935 errors=4538 current=src/structurePrinters/class/MethodDeclarationStructurePrinter.ts
+[2026-04-10T08:01:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.5 files_done=26 resolved=940 errors=4570 current=src/manipulation/formatting/getClassMemberFormatting.ts
+[2026-04-10T08:01:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.4 files_done=29 resolved=940 errors=4613 current=src/tests/utils/fileUtilsTests.ts
+[2026-04-10T08:03:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.6 files_done=30 resolved=980 errors=4665 current=src/tests/compiler/ast/enum/enumDeclarationTests.ts
+[2026-04-10T08:04:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.2 files_done=31 resolved=1025 errors=4742 current=src/tests/compiler/ast/base/name/nameableNodeTests.ts
+[2026-04-10T08:06:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.6 files_done=32 resolved=1061 errors=4806 current=src/tests/fileSystem/fileSystemWrapperTests.ts
+[2026-04-10T08:13:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.2 files_done=33 resolved=1171 errors=5154 current=src/compiler/ast/statement/StatementedNode.ts
+[2026-04-10T08:15:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.4 files_done=34 resolved=1285 errors=5255 current=src/tests/compiler/ast/base/typeElementMemberedNodeTests.ts
+[2026-04-10T08:20:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.6 files_done=35 resolved=1450 errors=5453 current=src/compiler/ast/function/FunctionExpression.ts
+[2026-04-10T08:25:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.9 files_done=38 resolved=1452 errors=5693 current=src/fileSystem/VirtualFileSystemHost.ts
+[2026-04-10T08:27:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.7 files_done=39 resolved=1462 errors=5778 current=src/fileSystem/Directory.ts
+[2026-04-10T08:33:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=40 resolved=1467 errors=6044 current=src/tests/compiler/ast/base/typeArgumentedNodeTests.ts
+[2026-04-10T08:34:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.9 files_done=41 resolved=1493 errors=6109 current=src/tests/compiler/ast/interface/callSignatureDeclarationTests.ts
+[2026-04-10T08:35:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.9 files_done=43 resolved=1500 errors=6159 current=src/tests/compiler/ast/interface/indexSignatureDeclarationTests.ts
+[2026-04-10T08:37:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.6 files_done=44 resolved=1531 errors=6234 current=src/tests/compiler/ast/function/overloadableNodeTests.ts
+[2026-04-10T08:37:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.4 files_done=45 resolved=1571 errors=6271 current=src/tests/compiler/ast/decorator/decoratorTests.ts
+[2026-04-10T08:41:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.3 files_done=46 resolved=1654 errors=6450 current=src/tests/compiler/ast/statement/statementedNode/enumTests.ts
+[2026-04-10T08:42:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.2 files_done=47 resolved=1689 errors=6493 current=src/tests/compiler/ast/module/importDeclarationTests.ts
+[2026-04-10T08:47:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.8 files_done=48 resolved=1770 errors=6706 current=src/compiler/ast/common/Node.ts
+[2026-04-10T08:56:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=156.0 files_done=49 resolved=1771 errors=7127 current=src/tests/compiler/ast/interface/interfaceDeclarationTests.ts
+[2026-04-10T08:57:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.0 files_done=50 resolved=1789 errors=7173 current=src/tests/errors/helpersTests.ts
+[2026-04-10T08:58:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.6 files_done=51 resolved=1845 errors=7201 current=src/utils/StringUtils.ts
+[2026-04-10T08:58:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.2 files_done=52 resolved=1846 errors=7230 current=src/tests/compiler/ast/statement/tryStatementTests.ts
+[2026-04-10T08:59:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.9 files_done=53 resolved=1846 errors=7263 current=src/tests/compiler/ast/type/typeParameterDeclarationTests.ts
+[2026-04-10T09:01:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.6 files_done=54 resolved=1876 errors=7341 current=src/tests/compiler/ast/base/moduledNodeTests.ts
+[2026-04-10T09:06:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.6 files_done=55 resolved=2013 errors=7573 current=src/compiler/ast/base/ExtendsClauseableNode.ts
+[2026-04-10T09:11:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=170.7 files_done=57 resolved=2030 errors=7808 current=src/utils/fillDefaultEditorSettings.ts
+[2026-04-10T09:11:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=171.3 files_done=59 resolved=2035 errors=7834 current=src/tests/manipulationSettingsTests.ts
+[2026-04-10T09:13:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=172.5 files_done=61 resolved=2049 errors=7888 current=src/tests/compiler/ast/class/constructorDeclarationTests.ts
+[2026-04-10T09:14:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=173.6 files_done=62 resolved=2073 errors=7940 current=src/compiler/ast/jsx/JsxElement.ts
+[2026-04-10T09:15:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=174.6 files_done=63 resolved=2074 errors=7985 current=src/tests/compiler/ast/literal/template/taggedTemplateExpressionTests.ts
+[2026-04-10T09:15:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.2 files_done=64 resolved=2074 errors=8013 current=src/tests/compiler/ast/statement/statementedNodeTests.ts
+[2026-04-10T09:19:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=178.8 files_done=65 resolved=2074 errors=8183 current=src/tests/compiler/type/typeTests.ts
+[2026-04-10T09:27:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=186.9 files_done=66 resolved=2074 errors=8557 current=src/structurePrinters/function/FunctionDeclarationStructurePrinter.ts
+[2026-04-10T09:28:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=187.6 files_done=67 resolved=2078 errors=8589 current=src/compiler/tools/LanguageService.ts
+[2026-04-10T09:30:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=190.4 files_done=68 resolved=2080 errors=8717 current=src/tests/fileSystem/directoryTests.ts
+[2026-04-10T09:59:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=218.8 files_done=69 resolved=2080 errors=10028 current=src/tests/compiler/ast/jsx/jsxElementTests.ts
+[2026-04-10T10:00:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.0 files_done=70 resolved=2080 errors=10087 current=src/compiler/ast/literal/template/TemplateExpression.ts
+[2026-04-10T10:01:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=221.2 files_done=73 resolved=2092 errors=10143 current=scripts/verification/validatePublicApiClassMemberNames.ts
+[2026-04-10T10:02:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=221.8 files_done=74 resolved=2092 errors=10168 current=src/tests/manipulation/getMixinStructureFunctionsTests.ts
+[2026-04-10T10:04:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=223.5 files_done=75 resolved=2126 errors=10245 current=src/tests/compiler/ast/jsx/jsxExpressionTests.ts
+[2026-04-10T10:04:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=224.3 files_done=76 resolved=2126 errors=10284 current=src/tests/compiler/tools/languageServiceTests.ts
+[2026-04-10T10:08:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.2 files_done=77 resolved=2126 errors=10462 current=src/compiler/ast/class/PropertyDeclaration.ts
+[2026-04-10T10:11:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=230.8 files_done=79 resolved=2126 errors=10582 current=src/tests/compiler/ast/module/namespaceDeclarationTests.ts
+[2026-04-10T10:13:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=232.5 files_done=80 resolved=2159 errors=10660 current=src/tests/compiler/ast/base/extendsClauseableNodeTests.ts
+[2026-04-10T10:14:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.8 files_done=81 resolved=2189 errors=10722 current=scripts/common/typeHelpers.ts
+[2026-04-10T10:15:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=234.7 files_done=83 resolved=2205 errors=10763 current=src/tests/compiler/ast/base/questionTokenableNodeTests.ts
+[2026-04-10T10:16:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=235.5 files_done=84 resolved=2220 errors=10800 current=src/manipulation/textManipulators/UnwrapTextManipulator.ts
+[2026-04-10T10:19:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=239.2 files_done=87 resolved=2220 errors=10970 current=scripts/inspectors/TsSimpleAstInspector.ts
+[2026-04-10T10:20:45Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=87 new_files_this_iter=87 mem_mb=930 MB
+[2026-04-10T10:20:45Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/873a2b351f4cb5ab5cebc77ec1dd88192f54ca22.nq.gz triples=73790
+[2026-04-10T10:20:46Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-10T10:20:46Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14412 elapsed_min=240.2 files_completed=87
